@@ -1,38 +1,82 @@
-.App {
+.container{
+  display:flex;
+  height:80vh;
+  margin:50px auto;
+  background-color: #2596be;
+  position:relative;
+}
+
+@media(min-width:800px){
+  .container{
+    max-width:40%;
+  }
+  .contactContainer{
+    max-width:40%;
+  }
+}
+
+.contactList{
+  width:100%;
+  display: flex;
+  padding:30px;
+  margin:0 auto;
+  overflow: auto;
+}
+
+.contactListItem{
+  margin:10px 0px;
+  width:100%;
+}
+
+#listDiv{
+  width:100%
+}
+.contactContainer{
+  display:flex;
+  height:80vh;
+  margin:50px auto;
+  background-color:#f2eae9;
+  position:relative;
+}
+.card{
+  width:80%;
+  /* height:100%; */
+  margin:auto;
+}
+
+.card-inner{
+  padding:10px;
+}
+
+#cardContent{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.userImage{
+  height:140;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.avatar{
+  height:140px
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#avatar .MuiAvatar-root{
+  height:100px !important;
+  width:100px !important;
+  margin:auto;
+}
+.MuiCardActions-root{
+  padding:0px !important;
+}
+.btnClass{
+  width:100%;
+}
+.nav{
+  list-style: none;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav li{
+  padding-right:10px;
 }
