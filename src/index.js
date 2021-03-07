@@ -14,7 +14,8 @@ import { PersistGate } from 'redux-persist/integration/react';
 import storage from 'redux-persist/lib/storage'
 const persistConfig = {
   key: 'root',
-  storage,
+  storage: storage,
+  whitelist: ['navigation'] 
 }
 const persistedReducer = persistReducer(persistConfig, RootReducer)
 const store = createStore(persistedReducer, applyMiddleware(thunk))
